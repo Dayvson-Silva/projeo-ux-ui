@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+     rel="stylesheet">
+    <title>Projeto UI/UX</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+</head>
+
+<body>
+    <header>
+        <i class="fi-br-menu-burger" id="menu" onclick="showMenu()"></i>
+        
+        <nav id="menu-active" class="show">
+
+            <i class="fi-br-cross" id="close" onclick="hideMenu()"></i>
+            <a href="#" class="active">Home</a>
+            <a href="#">services</a>
+            <a href="#">altbaut Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact Me</a>
+
+        </nav>
+
+        <div id="overlay"  onclick="hideMenu()"></div>
+        <img src="./IMAGE/remove.png" alt="logo" width="100px">
+    
+        <button>Hire Me</button>
+        
+     </header>
+
+</body>
+ <script src="script.js"></script>
+</html>
