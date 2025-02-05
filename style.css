@@ -5,7 +5,7 @@
     font-family: "Lato", sans-serif;
     list-style: none;
     text-decoration: none;
-    padding-left: 16px;
+    
 }
 :root {
     --linear: linear-gradient(to right, #FA6E00, #E60026);
@@ -14,6 +14,7 @@
     --linear-orange: linear-gradient(to right, #984300, #FD6F00, #CA5900);
     --gray: #959595;
     --dark-gray: #707070;
+    --darkest-gray: #1b1b1b;
     --more-dark-gray: #575757;
     --ligth-gray: #bababa;
     --white-gray: #dfdfdf;
@@ -27,8 +28,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2rem 2rem 0;
-
+    padding: 1rem 2rem 2rem 2rem;
+    
     background-color: var(--main-color);
     color: var(--white-gray);
     
@@ -110,7 +111,7 @@ header button {
     cursor: pointer;
 }
 
- #overlay{
+#overlay{
     display: none;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.5);
@@ -127,4 +128,172 @@ header button {
     display: block;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--dark-gray);
+    padding: 2rem;
+
+    
+}
+
+section p {
+    margin-bottom: 8px;
+}
+section h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    
+    color: var(--gray);
+}
+section h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background : linear-gradient(to right, #FA6E00, #E60026);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section i {
+    position: relative;
+    flex-direction: row;
+    font-size: 16px;
+    margin: 0 0.5rem;
+    color: var(--gray);
+    border-radius: 50%;
+    border: 2px solid var(--gray);
+    padding: 8px 10px 8px 10px;   
+    cursor: pointer;
+}
+
+div {
+    display: flex;
+    gap: 2em;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+    
+}
+.button1 {
+    
+    background-color: var(--orange);
+    color: var(--white-gray);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    
+}
+
+.button2 {
+    background-color: var(--main-color);
+    color: var(--white-gray);
+    border: 1px solid var(--white-gray);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}   
+
+.status {
+    background-color: var(--darkest-gray);
+    padding: 1rem  1rem 0 1rem;
+  
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+  
+    border-radius: 0.5rem;
+    
+  }
+  
+  .status p {
+    color: var(--white-gray);
+    
+  }
+  .status span {
+    color: var(--orange);
+    font-weight: bold;
+  }
+
+
+.experiences,.projects,.clients {
+  display: flex;
+  position: relative;
+  top: 10px;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+.experiences,.projects {
+  border-right: 1px solid var(--ligth-gray);
+  padding-right: 3rem;
+}
+
+
+
+#persona{
+    position: absolute;
+    top: 725px;
+    right: 59px;
+
+    padding: 2em;
+    
+}
+
+.circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: 59px;
+    top:800px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: -1;
+    background-color: #575757;
+    opacity: calc(0.2);
+}
+
+section h4 {
+    font-size: 20px;
+    color: white;
+    margin-top: 350px;
+}
+section span {
+    font-size: 12px;
+    color: var(--gray);
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 8px;
+    padding: 1rem ; 
+ 
+    
+}
+
+.service h3 {
+    color: var(--orange) ;
+    font-size: 25px;
+}
+.service p {
+
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.service .serv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-color: var(--darkest-gray);
+    border-radius: 20px;
+    padding: 5px;
+  
+    cursor: pointer;
+}
 
