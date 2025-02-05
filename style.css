@@ -235,8 +235,8 @@ div {
 
 #persona{
     position: absolute;
-    top: 725px;
-    right: 59px;
+    top: 674px;
+    right: 28px;
 
     padding: 2em;
     
@@ -244,9 +244,9 @@ div {
 
 .circle {
     position: absolute;
-    width: 300px;
-    height: 300px;
-    right: 59px;
+    width: 400px;
+    height: 400px;
+    right: 28px;
     top:800px;
     border-radius: 50%;
     cursor: pointer;
@@ -255,33 +255,53 @@ div {
     opacity: calc(0.2);
 }
 
-section h4 {
+.title-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.title-service h4 {
+
     font-size: 20px;
     color: white;
-    margin-top: 350px;
+    margin-top: 300px;
 }
-section span {
+.title-service span {
+    position: relative;
+    padding: 0 0 0 30px;
     font-size: 12px;
+    margin-top: -50px;
     color: var(--gray);
 }
 .service{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 8px;
-    padding: 1rem ; 
+    margin-top: -40px;
+    margin-bottom: -50px;
+    padding: 10px ; 
  
     
 }
 
 .service h3 {
     color: var(--orange) ;
-    font-size: 25px;
+    font-size: 16px;
+    position: relative;
+    top: 30px;
 }
-.service p {
+.service .serv p {
 
     display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 16px;
+    position: relative;
+    left: 15px;
+    
+    padding: 20px;
+    color: var(-- --more-dark-graygray);
 }
 
 .service .serv {
@@ -289,11 +309,59 @@ section span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+    margin-top: 40px;
+    margin-bottom: -40px;
     background-color: var(--darkest-gray);
     border-radius: 20px;
-    padding: 5px;
+    
   
     cursor: pointer;
 }
 
+.service .serv #user {
+    position: relative;
+    top: 50px;
+
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+.about h4 {
+    font-size: 20px;
+    color: white;
+    margin-top: 80px;
+}
+
+.about span {
+    position: relative;
+    padding: 0 0 0 30px;
+    font-size: 12px;
+    color: var(--gray);
+}   
+
+#man {
+    position: absolute;
+    top: 142rem;
+    right: 20px;
+    z-index: 1;
+    padding: 2em;
+}
+
+.retangulo {
+   
+        width: 350px;
+        height: 400px;
+        background-color: var(--gray);
+        position: absolute;
+        top: 148.3rem;
+        right: 50px;
+        border-radius: 150px 150px 10px 10px;
+        
+        opacity: calc(0.2);
+   
+}
