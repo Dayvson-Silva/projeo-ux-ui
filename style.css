@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 0 4rem 0rem 1rem;
     
     background-color: var(--main-color);
     color: var(--white-gray);
@@ -73,12 +73,12 @@ header button {
     position: fixed;
     top: 0;
     left: -100%;
-    width: min(15em, 100%);
+    width: min(16em, 100%);
     border-right: var(--gray) solid 1px;
     height: 100vh;
     background-color: var(--main-color);
     z-index: 9999;
-    padding: 20px;
+    padding: 30px;
     transition: all .3s ease-in-out;
     color: var(--white-gray);
     
@@ -139,19 +139,24 @@ section {
 }
 
 section p {
+    position: relative;
     margin-bottom: 8px;
+    left: -20px;
 }
 section h2 {
+    position: relative;
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    
+    left: -20px;
     color: var(--gray);
 }
 section h1 {
+    position: relative;
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 1rem;
+    left: -20px;
     background : linear-gradient(to right, #FA6E00, #E60026);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -160,6 +165,7 @@ section i {
     position: relative;
     flex-direction: row;
     font-size: 16px;
+    left: -22px;
     margin: 0 0.5rem;
     color: var(--gray);
     border-radius: 50%;
@@ -176,7 +182,7 @@ div {
     
 }
 .button1 {
-    
+    position: relative;
     background-color: var(--orange);
     color: var(--white-gray);
     border: none;
@@ -184,6 +190,7 @@ div {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 1rem;
+    left: -22px;
     
 }
 
@@ -199,22 +206,28 @@ div {
 
 .status {
     background-color: var(--darkest-gray);
-    padding: 1rem  1rem 0 1rem;
-  
+    padding:1rem;
+    position: relative;
+    left: -25px;
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(3, 80px);
   
     border-radius: 0.5rem;
     
   }
   
   .status p {
+    position: relative;
+    top: 20px;
+    left: 1px;
     color: var(--white-gray);
     
   }
   .status span {
     color: var(--orange);
     font-weight: bold;
+    position: relative;
+    left: 3px;
   }
 
 
@@ -228,15 +241,15 @@ div {
 }
 .experiences,.projects {
   border-right: 1px solid var(--ligth-gray);
-  padding-right: 3rem;
+  padding-right: 6rem;
 }
 
 
 
 #persona{
     position: absolute;
-    top: 674px;
-    right: 28px;
+    top: 700px;
+    right: 48px;
 
     padding: 2em;
     
@@ -244,10 +257,10 @@ div {
 
 .circle {
     position: absolute;
-    width: 400px;
-    height: 400px;
-    right: 28px;
-    top:800px;
+    width: 350px;
+    height: 350px;
+    right: 68px;
+    top:848px;
     border-radius: 50%;
     cursor: pointer;
     z-index: -1;
@@ -261,6 +274,8 @@ div {
     align-items: center;
     text-align: center;
     margin-top: 100px;
+    position: relative;
+    left: -42px;
 }
 
 .title-service h4 {
@@ -281,7 +296,9 @@ div {
     grid-template-columns: repeat(2, 1fr);
     margin-top: -40px;
     margin-bottom: -50px;
-    padding: 10px ; 
+    padding: 5px ; 
+    position: relative;
+    left: -28px;
  
     
 }
@@ -329,6 +346,8 @@ div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    left: -40px;
       
 }
 .about h4 {
@@ -347,7 +366,7 @@ div {
 #man {
     position: absolute;
     top: 142rem;
-    right: 20px;
+    right: 30px;
     z-index: 1;
     padding: 2em;
 }
@@ -360,6 +379,7 @@ div {
         position: absolute;
         top: 148.3rem;
         right: 50px;
+        left: 12px;
         border-radius: 150px 150px 10px 10px;
         
         opacity: calc(0.2);
